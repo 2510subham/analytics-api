@@ -7,7 +7,7 @@ const analyticsDataClient = new BetaAnalyticsDataClient(process.env.GOOGLE_APPLI
 // Runs a simple report.
 async function runReport() {
     const [response] = await analyticsDataClient.runReport({
-        property: `properties/421297441`,
+        property: `properties/${propertyId}`,
         dateRanges: [
             {
                 startDate: '2024-01-01',
